@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Event Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f2f2f2;
+        }
+
+        /* Event Banner */
+        .banner {
+            background: #333399;
+            color: white;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .btn {
+            background: orange;
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Schedule Section */
+        .schedule {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Flexbox Layout */
+        .events {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .event {
+            background: white;
+            padding: 20px;
+            width: 200px;
+            border-radius: 8px;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .banner {
+                padding: 25px 10px;
+            }
+
+            .banner h1 {
+                font-size: 25px;
+            }
+
+            .events {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .event {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="banner">
+        <h1>College Tech Fest 2026</h1>
+        <p>Join us for technology, innovation and fun!</p>
+        <p>Date: November 15, 2026</p>
+        <a href="#schedule" class="btn">View Schedule</a>
+    </div>
+
+    <div class="schedule" id="schedule">
+        <h2>Event Schedule</h2>
+
+        <div class="events">
+            <div class="event">
+                <h3>9:00 AM</h3>
+                <h4>Inauguration</h4>
+                <p>Opening ceremony.</p>
+            </div>
+
+            <div class="event">
+                <h3>11:00 AM</h3>
+                <h4>Technical Events</h4>
+                <p>Coding and project competitions.</p>
+            </div>
+
+            <div class="event">
+                <h3>2:00 PM</h3>
+                <h4>Cultural Events</h4>
+                <p>Music, dance and fun activities.</p>
+            </div>
+        </div>
+
+        <br><br>
+        <a href="mailto:events@college.edu" class="btn">
+            Register Now
+        </a>
+    </div>
+
+</body>
+</html>
